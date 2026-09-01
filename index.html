@@ -340,41 +340,40 @@
 		    background-color: rgba(0, 0, 0, 0);
 
 		    border-radius: clamp(10px, 2.5vw, 15px);
-		    box-shadow: 0 3vw 8vw rgba(47, 105, 140, 0);
+		    box-shadow: 1vw 1vw 0.9vw rgba(47, 105, 140, 0.4);
 
 		    animation: appear 1s ease;
 
 		    isolation: isolate;
+
+		    transition:
+		        opacity 0.8s ease,
+		        transform 0.8s ease;
 		}
 
+		.card.transparent {
+		    opacity: 0;
+		    transform: scale(0.98);
+		    pointer-events: auto;
+		}
 
 		/* CRUMPLED BACKGROUND */
 
 		.card::before {
 		    content: "";
-
 		    position: absolute;
 		    inset: 0;
 
-		    background: url("crumpled.png") center / cover no-repeat;
+		    background-image: url("crumpled.png");
+		    background-size: cover;
+		    background-position: center;
+		    background-repeat: no-repeat;
 
 		    border-radius: inherit;
 
 		    opacity: 1;
-
 		    z-index: -1;
-		    pointer-events: none;
-
-		    transition: opacity 0.6s ease;
 		}
-
-
-		/* TRANSPARENT STATE */
-
-		.card.transparent::before {
-		    opacity: 0;
-		}
-
 
 		/* SCROLLING CONTENT */
 
@@ -391,42 +390,6 @@
 
 		.card-content::-webkit-scrollbar {
 		    display: none;
-		}
-
-		.message span {
-		    transition: color 0.6s ease;
-		}
-
-		.card.transparent .message span {
-		    color: transparent !important;
-		}
-
-
-		.card,
-		.card h2,
-		.card .small,
-		.card .subtitle,
-		.card .message,
-		.card .message strong,
-		.card .message span,
-		.card .inside-item,
-		.card .footer {
-		    transition: color 0.6s ease;
-		}
-
-		.card.transparent {
-		    color: transparent;
-		}
-
-		.card.transparent h2,
-		.card.transparent .small,
-		.card.transparent .subtitle,
-		.card.transparent .message,
-		.card.transparent .message strong,
-		.card.transparent .message span,
-		.card.transparent .inside-item,
-		.card.transparent .footer {
-		    color: transparent;
 		}
 
 
@@ -456,14 +419,6 @@
             object-fit: contain;
             margin: 0vw auto;
         }
-
-        .main-lily {
-		    transition: opacity 0.6s ease;
-		}
-
-		.card.transparent .main-lily {
-		    opacity: 0;
-		}
 
         .subtitle {
             font-size: clamp(16px, 4vw, 19px);
@@ -595,11 +550,11 @@
 
 	            <br><br>
 
-	            Anyways ginawa ko to simula like before mag10am hanggang saktong 4pm na sinusulat ko to rn hehehe. Pero baka later ko pa matatapos kasi hahanapan ko pa ng paraan para maaccess mo gamit ang phone moooo.
+	            Anyways ginawa ko to simula like before mag10am hanggang saktong 3pm na sinusulat ko to rn hehehe. Pero baka later ko pa matatapos kasi hahanapan ko pa ng paraan para maaccess mo gamit ang phone moooo.
 
 	            <br><br>
 
-	            I think about you a lot po Danica and it's wild that I see you in my future talaga and I hope the same dinnnn. Looking back like roughly 2 months ago na, if you asked me if we'd be together with a label 2 months later which is right now, I wouldn't believe it. I like you a lot po really and I am quite serious about you din. I always look forward to your chikas, and your rants and handa akong sasaluhin kita when you're spiraling down from a sadness I may never understand fully kasi ikaw lang ang nakakaalam.
+	            So anywaysss, there's a lot I want to say. Sometimes I think a lot about you Danica and it's wild that I see you in my future talaga and I hope the same dinnnn sayo. Looking back like roughly 2 months ago na, if you asked me if we'd be together with a label 2 months later which is right now, I wouldn't believe it. I like you a lot po really and I am quite serious about you din. I always look forward to your chikas, and your rants and handa akong sasaluhin kita when you're spiraling down from a sadness I may never understand fully kasi ikaw lang ang nakakaalam.
 
 	            <br><br>
 
@@ -608,7 +563,7 @@
 
 	            <br><br>
 
-	             I hope you understand that it isn't hard to love you, and I will do my best to keep loving you. I am always proud of you po Danica when you achieve a feat of being a better version of yourself. Maybe hindi mo ramdam na nagchachange ka pero natural talaga yun. Two short months isn't just enough to magically make a significant change in your life, but it is important that you put your faith in the process. I put my faith in that din. So be a good girl po for me okayyy? I love you haaaa. I want you to survive the harsh environment that you're growing up and I wish I can learn from your experiences din. 
+	             I hope you understand that it isn't hard to love you, and I will do my best to keep loving you. I am always proud of you po Danica when you achieve a feat of being a better version of yourself. Maybe hindi mo ramdam na nagchachange ka pero natural talaga yun. Two short months isn't just enough to magically make a significant change in your life, but it is important that you put your faith in the process. I put my faith in that din. So be a good girl po for me okayyy? I love you haaaa. I want you to be able to survive the harsh environment that you're growing up in and I wish I can learn from your experiences din.
 
 	             <br><br>
 
@@ -616,11 +571,15 @@
 
 	            <br><br>
 
-	            So yunnn, Happy Birthday Danicaaaa! Mahal na mahal kita nang sobraaa. I hope this day reminds you of how loved, appreciated and valued you are po! Deserve mo ang every bit of happiness and food that comes your wayyyy. Don't look too down on yourself po haaaa. Do it for me and for yourselffff. I hope this birthday letter made your day a little bit betterrrr kahit konti langggg. Enjoy lang po mga pagkain mo ngayon, kain ka nang maramiiii. Inom ka nang maramiiii. Tumae ka rin nang maramiii HAHAHAHA. I love you a lotttttt. I'm really glad I got to know you, laugh with you, and make memories with you.
+	            So yunnn, Happy Birthday Danicaaaa! Mahal na mahal kita nang sobraaa. I hope this day reminds you of how loved, appreciated and valued you are po! Deserve mo ang every bit of happiness and food that comes your wayyyy. Don't look too down on yourself po haaaa. Do it for me and for yourself. I hope this birthday letter made your day a little bit betterrrr kahit konti langggg. Enjoy lang po mga pagkain mo ngayon, kain ka nang maramiiii. Inom ka nang maramiiii. Tumae ka rin nang maramiii HAHAHAHA. I love you a lotttttt. I'm really glad I got to know you, laugh with you, and make memories with you.
 
 	            <br><br>
 
 	            Enjoy mo lang ang araw na to, kasi this day is about you okayyy? I love you Danica. You're more than what people make you out to be. I will support you in the long run, wherever that may take us. This day dapat masaya ka kasi like I said this day is about you and everything that is <strong>you.</strong> :> 💙
+
+	            <br><br><br><br><br><br>
+	            PS: I miss you a lot and I love you so muchhhhh ulittt hehehe.
+	            <br><br>
 	        </p>
 	    </div>
     </main>
