@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday 💙</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+		    margin: 0;
+		    width: 100%;
+		    min-height: 100dvh;
+		    font-family: cursive;
+		    background: linear-gradient(135deg, #7ddcff 0%, #668cff 100%);
+		    color: #31556e;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    overflow-x: hidden;
+		    padding: 2vw;
+		}
+
+/* Floating decorations */
+
+		.decor {
+		    position: fixed;
+		    z-index: 1;
+		    object-fit: contain;
+		    pointer-events: none;
+		    opacity: 0.75;
+		}
+
+
+		/* CATS */
+
+		.cat,
+		.cat-2,
+		.cat-3,
+		.cat-4,
+		.cat-5 {
+		    width: clamp(45px, 10vw, 80px);
+		    height: clamp(45px, 10vw, 80px);
+		}
+
+		.cat {
+		    top: 8%;
+		    left: -12%;
+		    animation: cat1 21s linear infinite;
+		}
+
+		.cat-2 {
+		    top: 26%;
+		    left: -15%;
+		    animation: cat2 17s linear infinite;
+		    animation-delay: 2s;
+		}
+
+		.cat-3 {
+		    top: 47%;
+		    left: -10%;
+		    animation: cat3 25s linear infinite;
+		    animation-delay: 6s;
+		}
+
+		.cat-4 {
+		    top: 69%;
+		    left: -14%;
+		    animation: cat4 19s linear infinite;
+		    animation-delay: 14s;
+		}
+
+		.cat-5 {
+		    top: 88%;
+		    left: -13%;
+		    animation: cat5 28s linear infinite;
+		    animation-delay: 7s;
+		}
+
+		 /* SEALS */
+
+
+		.seal,
+		.seal-2,
+		.seal-3 {
+		    width: clamp(50px, 11vw, 85px);
+		    height: clamp(50px, 11vw, 85px);
+		}
+
+		.seal {
+		    top: 16%;
+		    left: -14%;
+		    animation: seal1 24s linear infinite;
+		    animation-delay: 1s;
+		}
+
+		.seal-2 {
+		    top: 57%;
+		    left: -12%;
+		    animation: seal2 18s linear infinite;
+		    animation-delay: 8s;
+		}
+
+		.seal-3 {
+		    top: 79%;
+		    left: -15%;
+		    animation: seal3 27s linear infinite;
+		    animation-delay: 13s;
+		}
+
+
+		/* CAPYBARAS */
+
+		.capybara,
+		.capybara-2,
+		.capybara-3 {
+		    width: clamp(55px, 12vw, 90px);
+		    height: clamp(55px, 12vw, 90px);
+		}
+
+		.capybara {
+		    top: 35%;
+		    left: -15%;
+		    animation: capy1 23s linear infinite;
+		    animation-delay: 15s;
+		}
+
+		.capybara-2 {
+		    top: 63%;
+		    left: -12%;
+		    animation: capy2 29s linear infinite;
+		    animation-delay: 9s;
+		}
+
+		.capybara-3 {
+		    top: 93%;
+		    left: -15%;
+		    animation: capy3 20s linear infinite;
+		    animation-delay: 12s;
+		}
+
+
+		/* LILIES */
+
+		.lily,
+		.lily-2,
+		.lily-3,
+		.lily-4,
+		.lily-5 {
+		    width: clamp(55px, 13vw, 95px);
+		    height: clamp(55px, 13vw, 95px);
+		}
+
+		.lily {
+		    top: 5%;
+		    left: -15%;
+		    animation: lily1 26s linear infinite;
+		    animation-delay: 5s;
+		}
+
+		.lily-2 {
+		    top: 21%;
+		    left: -12%;
+		    animation: lily2 18s linear infinite;
+		    animation-delay: 10s;
+		}
+
+		.lily-3 {
+		    top: 42%;
+		    left: -15%;
+		    animation: lily3 23s linear infinite;
+		    animation-delay: 4s;
+		}
+
+		.lily-4 {
+		    top: 73%;
+		    left: -10%;
+		    animation: lily4 20s linear infinite;
+		    animation-delay: 16s;
+		}
+
+		.lily-5 {
+		    top: 96%;
+		    left: -15%;
+		    animation: lily5 30s linear infinite;
+		    animation-delay: 11s;
+		}
+
+
+		/* ANIMATIONS */
+
+		@keyframes cat1 {
+		    from { transform: translateX(0) rotate(-5deg); }
+		    to { transform: translateX(125vw) rotate(6deg); }
+		}
+
+		@keyframes cat2 {
+		    from { transform: translateX(0) rotate(5deg); }
+		    to { transform: translateX(125vw) rotate(-7deg); }
+		}
+
+		@keyframes cat3 {
+		    from { transform: translateX(0) rotate(-3deg); }
+		    to { transform: translateX(125vw) rotate(8deg); }
+		}
+
+		@keyframes cat4 {
+		    from { transform: translateX(0) rotate(7deg); }
+		    to { transform: translateX(125vw) rotate(-5deg); }
+		}
+
+		@keyframes cat5 {
+		    from { transform: translateX(0) rotate(-6deg); }
+		    to { transform: translateX(125vw) rotate(4deg); }
+		}
+
+
+		@keyframes seal1 {
+		    from { transform: translateX(0) rotate(4deg); }
+		    to { transform: translateX(125vw) rotate(-5deg); }
+		}
+
+		@keyframes seal2 {
+		    from { transform: translateX(0) rotate(-6deg); }
+		    to { transform: translateX(125vw) rotate(4deg); }
+		}
+
+		@keyframes seal3 {
+		    from { transform: translateX(0) rotate(3deg); }
+		    to { transform: translateX(125vw) rotate(-7deg); }
+		}
+
+
+		@keyframes capy1 {
+		    from { transform: translateX(0) rotate(-3deg); }
+		    to { transform: translateX(125vw) rotate(3deg); }
+		}
+
+		@keyframes capy2 {
+		    from { transform: translateX(0) rotate(5deg); }
+		    to { transform: translateX(125vw) rotate(-4deg); }
+		}
+
+		@keyframes capy3 {
+		    from { transform: translateX(0) rotate(-5deg); }
+		    to { transform: translateX(125vw) rotate(6deg); }
+		}
+
+
+		@keyframes lily1 {
+		    from { transform: translateX(0) rotate(-8deg); }
+		    to { transform: translateX(125vw) rotate(8deg); }
+		}
+
+		@keyframes lily2 {
+		    from { transform: translateX(0) rotate(6deg); }
+		    to { transform: translateX(125vw) rotate(-7deg); }
+		}
+
+		@keyframes lily3 {
+		    from { transform: translateX(0) rotate(-5deg); }
+		    to { transform: translateX(125vw) rotate(9deg); }
+		}
+
+		@keyframes lily4 {
+		    from { transform: translateX(0) rotate(8deg); }
+		    to { transform: translateX(125vw) rotate(-6deg); }
+		}
+
+		@keyframes lily5 {
+		    from { transform: translateX(0) rotate(-7deg); }
+		    to { transform: translateX(125vw) rotate(5deg); }
+		}
+
+
+
+        /* Main card */
+		.card {
+		    width: min(90vw, 650px);
+		    position: relative;
+		    z-index: 2;
+
+		    max-height: 90dvh;
+
+		    padding: 0;
+
+		    text-align: center;
+
+		    background: transparent;
+		    background-color: rgba(20, 20, 20, 0.2);
+
+		    border-radius: clamp(10px, 2.5vw, 15px);
+		    box-shadow: 0 3vw 8vw rgba(47, 105, 140, 1);
+
+		    backdrop-filter: blur(10px);
+
+		    animation: appear 1s ease;
+
+		    isolation: isolate;
+		}
+
+
+		/* CRUMPLED BACKGROUND */
+
+		.card::before {
+		    content: "";
+
+		    position: absolute;
+		    inset: 0;
+
+		    background: url("crumpled.png") center / cover no-repeat;
+
+		    border-radius: inherit;
+
+		    opacity: 1;
+
+		    z-index: -1;
+		    pointer-events: none;
+
+		    transition: opacity 0.6s ease;
+		}
+
+
+		/* TRANSPARENT STATE */
+
+		.card.transparent::before {
+		    opacity: 0;
+		}
+
+
+		/* SCROLLING CONTENT */
+
+		.card-content {
+		    max-height: 90dvh;
+		    overflow-y: auto;
+
+		    padding: clamp(14px, 3.5vw, 22.5px)
+		             clamp(20px, 6vw, 35px);
+
+		    scrollbar-width: none;
+		    -ms-overflow-style: none;
+		}
+
+		.card-content::-webkit-scrollbar {
+		    display: none;
+		}
+
+		.message span {
+		    transition: color 0.6s ease;
+		}
+
+		.card.transparent .message span {
+		    color: transparent !important;
+		}
+
+
+		.card,
+		.card h2,
+		.card .small,
+		.card .subtitle,
+		.card .message,
+		.card .message strong,
+		.card .message span,
+		.card .inside-item,
+		.card .footer {
+		    transition: color 0.6s ease;
+		}
+
+		.card.transparent {
+		    color: transparent;
+		}
+
+		.card.transparent h2,
+		.card.transparent .small,
+		.card.transparent .subtitle,
+		.card.transparent .message,
+		.card.transparent .message strong,
+		.card.transparent .message span,
+		.card.transparent .inside-item,
+		.card.transparent .footer {
+		    color: transparent;
+		}
+
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(5vw);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            font-size: clamp(42px, 6vw, 70px);
+            line-height: 1;
+            margin: -2vw 0 0vw;
+            color: #367da8;
+            font-family: "Brush Script MT", cursive;
+        }
+
+        .main-lily {
+            width: clamp(100px, 25vw, 190px);
+            height: clamp(100px, 25vw, 190px);
+            object-fit: contain;
+            margin: 0vw auto;
+        }
+
+        .main-lily {
+		    transition: opacity 0.6s ease;
+		}
+
+		.card.transparent .main-lily {
+		    opacity: 0;
+		}
+
+        .subtitle {
+            font-size: clamp(16px, 4vw, 19px);
+            margin-bottom: 2vw;
+            color: #52768c;
+            font-family: "Brush Script MT", cursive;
+        }
+
+        .message {
+            line-height: 1.7;
+            font-size: clamp(20px, 40vw, 22px);
+            max-width: 500px;
+            margin: auto;
+            text-align: justify;
+        }
+
+        .message strong {
+            color: #3479a4;
+        }
+
+        /* Inside jokes */
+
+        .inside {
+            margin-top: 5vw;
+            padding: 3vw;
+            border-radius: clamp(16px, 4vw, 22px);
+            background: #e8f6ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(8px, 2.5vw, 15px);
+            flex-wrap: wrap;
+        }
+
+        .inside-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1vw;
+            font-size: clamp(11px, 2.5vw, 12px);
+            color: #52788f;
+        }
+
+        .inside-item img {
+            width: clamp(35px, 10vw, 42px);
+            height: clamp(35px, 10vw, 42px);
+            object-fit: contain;
+        }
+
+        /* Small phones */
+
+        @media (max-width: 400px) {
+            .decor {
+                opacity: 0.65;
+            }
+
+            .card {
+                width: 90vw;
+                padding: 28px 18px;
+            }
+
+            .inside {
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating decorations -->
+
+	<!-- Cats -->
+	<img src="catus1.png" class="decor cat" alt="Cat">
+	<img src="catbruh.png" class="decor cat-2" alt="Cat">
+	<img src="catok.png" class="decor cat-3" alt="Cat">
+	<img src="catz.png" class="decor cat-4" alt="Cat">
+	<img src="catrose.png" class="decor cat-5" alt="Cat">
+
+	<!-- Seals -->
+	<img src="seal1.png" class="decor seal" alt="Seal">
+	<img src="seal2.png" class="decor seal-2" alt="Seal">
+	<img src="seal3.png" class="decor seal-3" alt="Seal">
+
+	<!-- Capybaras -->
+	<img src="capybara.png" class="decor capybara" alt="Capybara">
+	<img src="capybara2.png" class="decor capybara-2" alt="Capybara">
+	<img src="capybara3.png" class="decor capybara-3" alt="Capybara">
+
+	<!-- Lilies -->
+	<img src="bl1.png" class="decor lily" alt="Blue lily">
+	<img src="bl2.png" class="decor lily-2" alt="Blue lily">
+	<img src="bl3.png" class="decor lily-3" alt="Blue lily">
+	<img src="bl4.png" class="decor lily-4" alt="Blue lily">
+	<img src="bl5.png" class="decor lily-5" alt="Blue lily">
+
+
+    <!-- Main birthday card -->
+
+    <main class="card" onclick="toggleCard()">
+
+    	<div class="card-content">
+
+	        <img src="bl1.png" class="main-lily" alt="Blue lily">
+
+	        <h2>
+	            Happy Birthday!
+	        </h2>
+
+	        <div class="subtitle">
+	            To my most favorite person in the world! 💙
+	        </div>
+
+	        <p class="message">
+	            Happy 19th birthday, <strong>Danica!</strong> 💙
+
+	            <br><br>
+
+	            You probably weren't expecting such a birthday card galing sakin but hey at least I tried di baaaa :>>
+
+	            <br><br>
+
+
+	            Danicaaa, as of writing this, tangina sobrang namimiss na kitaaa. Tapos late pa ako magreply sayo kasi ginagawa ko to ;_; (sorry naaaaa love youuu) But yes I made this birthday card just for you pooo <span style="color:rgb(49,85,110,0.6);">(nagpatulong din naman ako sa some dito online, pero yes, I know po how to code ng website din namannn hehehe, subject kasi namin nung high school ang Computer Science :>> )</span>.
+
+	            <br><br>
+
+	            Anyways ginawa ko to simula like before mag10am hanggang saktong 4pm na sinusulat ko to rn hehehe. Pero baka later ko pa matatapos kasi hahanapan ko pa ng paraan para maaccess mo gamit ang phone moooo.
+
+	            <br><br>
+
+	            I think about you a lot po Danica and it's wild that I see you in my future talaga and I hope the same dinnnn. Looking back like roughly 2 months ago na, if you asked me if we'd be together with a label 2 months later which is right now, I wouldn't believe it. I like you a lot po really and I am quite serious about you din. I always look forward to your chikas, and your rants and handa akong sasaluhin kita when you're spiraling down from a sadness I may never understand fully kasi ikaw lang ang nakakaalam.
+
+	            <br><br>
+
+	            I have understood, still understand, and will keep understanding you in ways no other man will try to do with all their heart.
+	            The thought of you always fill every corner of my mind. I have developed great feelings of liking sayo that it kinda feels cannibalistic <span style="color:rgb(49,85,110,0.6);">(na para bang "I want to eat you the fuck up" ba? HAHAHA).</span> 
+
+	            <br><br>
+
+	             I hope you understand that it isn't hard to love you, and I will do my best to keep loving you. I am always proud of you po Danica when you achieve a feat of being a better version of yourself. Maybe hindi mo ramdam na nagchachange ka pero natural talaga yun. Two short months isn't just enough to magically make a significant change in your life, but it is important that you put your faith in the process. I put my faith in that din. So be a good girl po for me okayyy? I love you haaaa. I want you to survive the harsh environment that you're growing up and I wish I can learn from your experiences din. 
+
+	             <br><br>
+
+	            I wanna bring up one more thing din. I hope that you can be more harsh with me rin naman, I can handle it po. Kasi yun nga rin, I want to learn more from you. When I'm being too demanding sayo and like I'm having too much fun with you tapos you feel exploited or disgusted sa ginagawa ko sayo, please lang po... you have to sometimes put me in my place, kasi I don't own you naman po <span style="color:rgb(49,85,110,0.6);">(parang kabaligtaran nga kasi nasa kamay mo ang puso ko e hehehe)</span> Pero fr, I hope talaga na nagegets mo sinasabi koooo.
+
+	            <br><br>
+
+	            So yunnn, Happy Birthday Danicaaaa! Mahal na mahal kita nang sobraaa. I hope this day reminds you of how loved, appreciated and valued you are po! Deserve mo ang every bit of happiness and food that comes your wayyyy. Don't look too down on yourself po haaaa. Do it for me and for yourselffff. I hope this birthday letter made your day a little bit betterrrr kahit konti langggg. Enjoy lang po mga pagkain mo ngayon, kain ka nang maramiiii. Inom ka nang maramiiii. Tumae ka rin nang maramiii HAHAHAHA. I love you a lotttttt. I'm really glad I got to know you, laugh with you, and make memories with you.
+
+	            <br><br>
+
+	            Enjoy mo lang ang araw na to, kasi this day is about you okayyy? I love you Danica. You're more than what people make you out to be. I will support you in the long run, wherever that may take us. This day dapat masaya ka kasi like I said this day is about you and everything that is <strong>you.</strong> :> 💙
+	        </p>
+	    </div>
+    </main>
+</div>
+</body>
+
+	<script>
+	    function toggleCard() {
+	        document.querySelector(".card").classList.toggle("transparent");
+	    }
+	</script>
+
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday 💙</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+		    margin: 0;
+		    width: 100%;
+		    min-height: 100dvh;
+		    font-family: "Brush Script MT", "Segoe Script", cursive;
+		    background: linear-gradient(135deg, #7ddcff 0%, #668cff 100%);
+		    color: #31556e;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    overflow-x: hidden;
+		    padding: 2vw;
+		}
+
+/* Floating decorations */
+
+		.decor {
+		    position: fixed;
+		    z-index: 1;
+		    object-fit: contain;
+		    pointer-events: none;
+		    opacity: 0.75;
+		}
+
+
+		/* CATS */
+
+		.cat,
+		.cat-2,
+		.cat-3,
+		.cat-4,
+		.cat-5 {
+		    width: clamp(45px, 10vw, 80px);
+		    height: clamp(45px, 10vw, 80px);
+		}
+
+		.cat {
+		    top: 8%;
+		    left: -12%;
+		    animation: cat1 21s linear infinite;
+		}
+
+		.cat-2 {
+		    top: 26%;
+		    left: -15%;
+		    animation: cat2 17s linear infinite;
+		    animation-delay: 2s;
+		}
+
+		.cat-3 {
+		    top: 47%;
+		    left: -10%;
+		    animation: cat3 25s linear infinite;
+		    animation-delay: 6s;
+		}
+
+		.cat-4 {
+		    top: 69%;
+		    left: -14%;
+		    animation: cat4 19s linear infinite;
+		    animation-delay: 14s;
+		}
+
+		.cat-5 {
+		    top: 88%;
+		    left: -13%;
+		    animation: cat5 28s linear infinite;
+		    animation-delay: 7s;
+		}
+
+		 /* SEALS */
+
+
+		.seal,
+		.seal-2,
+		.seal-3 {
+		    width: clamp(50px, 11vw, 85px);
+		    height: clamp(50px, 11vw, 85px);
+		}
+
+		.seal {
+		    top: 16%;
+		    left: -14%;
+		    animation: seal1 24s linear infinite;
+		    animation-delay: 1s;
+		}
+
+		.seal-2 {
+		    top: 57%;
+		    left: -12%;
+		    animation: seal2 18s linear infinite;
+		    animation-delay: 8s;
+		}
+
+		.seal-3 {
+		    top: 79%;
+		    left: -15%;
+		    animation: seal3 27s linear infinite;
+		    animation-delay: 13s;
+		}
+
+
+		/* CAPYBARAS */
+
+		.capybara,
+		.capybara-2,
+		.capybara-3 {
+		    width: clamp(55px, 12vw, 90px);
+		    height: clamp(55px, 12vw, 90px);
+		}
+
+		.capybara {
+		    top: 35%;
+		    left: -15%;
+		    animation: capy1 23s linear infinite;
+		    animation-delay: 15s;
+		}
+
+		.capybara-2 {
+		    top: 63%;
+		    left: -12%;
+		    animation: capy2 29s linear infinite;
+		    animation-delay: 9s;
+		}
+
+		.capybara-3 {
+		    top: 93%;
+		    left: -15%;
+		    animation: capy3 20s linear infinite;
+		    animation-delay: 12s;
+		}
+
+
+		/* LILIES */
+
+		.lily,
+		.lily-2,
+		.lily-3,
+		.lily-4,
+		.lily-5 {
+		    width: clamp(55px, 13vw, 95px);
+		    height: clamp(55px, 13vw, 95px);
+		}
+
+		.lily {
+		    top: 5%;
+		    left: -15%;
+		    animation: lily1 26s linear infinite;
+		    animation-delay: 5s;
+		}
+
+		.lily-2 {
+		    top: 21%;
+		    left: -12%;
+		    animation: lily2 18s linear infinite;
+		    animation-delay: 10s;
+		}
+
+		.lily-3 {
+		    top: 42%;
+		    left: -15%;
+		    animation: lily3 23s linear infinite;
+		    animation-delay: 4s;
+		}
+
+		.lily-4 {
+		    top: 73%;
+		    left: -10%;
+		    animation: lily4 20s linear infinite;
+		    animation-delay: 16s;
+		}
+
+		.lily-5 {
+		    top: 96%;
+		    left: -15%;
+		    animation: lily5 30s linear infinite;
+		    animation-delay: 11s;
+		}
+
+
+		/* ANIMATIONS */
+
+		@keyframes cat1 {
+		    from { transform: translateX(0) rotate(-5deg); }
+		    to { transform: translateX(125vw) rotate(6deg); }
+		}
+
+		@keyframes cat2 {
+		    from { transform: translateX(0) rotate(5deg); }
+		    to { transform: translateX(125vw) rotate(-7deg); }
+		}
+
+		@keyframes cat3 {
+		    from { transform: translateX(0) rotate(-3deg); }
+		    to { transform: translateX(125vw) rotate(8deg); }
+		}
+
+		@keyframes cat4 {
+		    from { transform: translateX(0) rotate(7deg); }
+		    to { transform: translateX(125vw) rotate(-5deg); }
+		}
+
+		@keyframes cat5 {
+		    from { transform: translateX(0) rotate(-6deg); }
+		    to { transform: translateX(125vw) rotate(4deg); }
+		}
+
+
+		@keyframes seal1 {
+		    from { transform: translateX(0) rotate(4deg); }
+		    to { transform: translateX(125vw) rotate(-5deg); }
+		}
+
+		@keyframes seal2 {
+		    from { transform: translateX(0) rotate(-6deg); }
+		    to { transform: translateX(125vw) rotate(4deg); }
+		}
+
+		@keyframes seal3 {
+		    from { transform: translateX(0) rotate(3deg); }
+		    to { transform: translateX(125vw) rotate(-7deg); }
+		}
+
+
+		@keyframes capy1 {
+		    from { transform: translateX(0) rotate(-3deg); }
+		    to { transform: translateX(125vw) rotate(3deg); }
+		}
+
+		@keyframes capy2 {
+		    from { transform: translateX(0) rotate(5deg); }
+		    to { transform: translateX(125vw) rotate(-4deg); }
+		}
+
+		@keyframes capy3 {
+		    from { transform: translateX(0) rotate(-5deg); }
+		    to { transform: translateX(125vw) rotate(6deg); }
+		}
+
+
+		@keyframes lily1 {
+		    from { transform: translateX(0) rotate(-8deg); }
+		    to { transform: translateX(125vw) rotate(8deg); }
+		}
+
+		@keyframes lily2 {
+		    from { transform: translateX(0) rotate(6deg); }
+		    to { transform: translateX(125vw) rotate(-7deg); }
+		}
+
+		@keyframes lily3 {
+		    from { transform: translateX(0) rotate(-5deg); }
+		    to { transform: translateX(125vw) rotate(9deg); }
+		}
+
+		@keyframes lily4 {
+		    from { transform: translateX(0) rotate(8deg); }
+		    to { transform: translateX(125vw) rotate(-6deg); }
+		}
+
+		@keyframes lily5 {
+		    from { transform: translateX(0) rotate(-7deg); }
+		    to { transform: translateX(125vw) rotate(5deg); }
+		}
+
+
+
+        /* Main card */
+
+		.card {
+		    width: min(180vw, 1400px);
+		    position: relative;
+		    z-index: 2;
+		    max-height: 90dvh;
+		    overflow-y: auto;
+		    padding: clamp(14px, 3.5vw, 22.5px) clamp(20px, 6vw, 35px);
+		    text-align: center;
+
+		    background: transparent;
+
+		    border-radius: clamp(10px, 2.5vw, 15px);
+		    box-shadow: 0 3vw 8vw rgba(47, 105, 140, 1);
+		    border: 2px solid rgba(255, 255, 255, 0.33);
+		    backdrop-filter: blur(10px);
+		    animation: appear 1s ease;
+
+		    /* Needed for the texture layer */
+		    isolation: isolate;
+		}
+
+		/* Crumpled background */
+		.card::before {
+		    content: "";
+		    position: absolute;
+		    inset: 0;
+
+		    background-image: url("crumpled.png");
+		    background-size: cover;
+		    background-position: center;
+		    background-repeat: no-repeat;
+
+		    border-radius: inherit;
+
+		    opacity: 1;
+		    z-index: -1;
+
+		    transition: opacity 0.6s ease;
+		}
+
+		/* Transparent state */
+		.card.transparent::before {
+		    opacity: 0;
+		}
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(5vw);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            font-size: clamp(42px, 6vw, 70px);
+            line-height: 1;
+            margin: -2vw 0 2vw;
+            color: #367da8;
+        }
+
+        .main-lily {
+            width: clamp(100px, 25vw, 190px);
+            height: clamp(100px, 25vw, 190px);
+            object-fit: contain;
+            margin: 0vw auto;
+        }
+
+        .subtitle {
+            font-size: clamp(16px, 4vw, 19px);
+            margin-bottom: 4vw;
+            color: #52768c;
+        }
+
+        .message {
+            line-height: 1.7;
+            font-size: clamp(22px, 42vw, 25px);
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .message strong {
+            color: #3479a4;
+        }
+
+        /* Inside jokes */
+
+        .inside {
+            margin-top: 5vw;
+            padding: 3vw;
+            border-radius: clamp(16px, 4vw, 22px);
+            background: #e8f6ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(8px, 2.5vw, 15px);
+            flex-wrap: wrap;
+        }
+
+        .inside-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1vw;
+            font-size: clamp(11px, 2.5vw, 12px);
+            color: #52788f;
+        }
+
+        .inside-item img {
+            width: clamp(35px, 10vw, 42px);
+            height: clamp(35px, 10vw, 42px);
+            object-fit: contain;
+        }
+
+        /* Small phones */
+
+        @media (max-width: 400px) {
+            .decor {
+                opacity: 0.65;
+            }
+
+            .card {
+                width: 90vw;
+                padding: 28px 18px;
+            }
+
+            .inside {
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating decorations -->
+
+	<!-- Cats -->
+	<img src="catus1.png" class="decor cat" alt="Cat">
+	<img src="catbruh.png" class="decor cat-2" alt="Cat">
+	<img src="catok.png" class="decor cat-3" alt="Cat">
+	<img src="catz.png" class="decor cat-4" alt="Cat">
+	<img src="catrose.png" class="decor cat-5" alt="Cat">
+
+	<!-- Seals -->
+	<img src="seal1.png" class="decor seal" alt="Seal">
+	<img src="seal2.png" class="decor seal-2" alt="Seal">
+	<img src="seal3.png" class="decor seal-3" alt="Seal">
+
+	<!-- Capybaras -->
+	<img src="capybara.png" class="decor capybara" alt="Capybara">
+	<img src="capybara2.png" class="decor capybara-2" alt="Capybara">
+	<img src="capybara3.png" class="decor capybara-3" alt="Capybara">
+
+	<!-- Lilies -->
+	<img src="bl1.png" class="decor lily" alt="Blue lily">
+	<img src="bl2.png" class="decor lily-2" alt="Blue lily">
+	<img src="bl3.png" class="decor lily-3" alt="Blue lily">
+	<img src="bl4.png" class="decor lily-4" alt="Blue lily">
+	<img src="bl5.png" class="decor lily-5" alt="Blue lily">
+
+
+    <!-- Main birthday card -->
+
+    <main class="card" onclick="toggleCard()">
+
+        <img src="bl1.png" class="main-lily" alt="Blue lily">
+
+        <h2>
+            Happy Birthday!
+        </h2>
+
+        <div class="subtitle">
+            To the cutest person in my little world 💙
+        </div>
+
+        <p class="message">
+            Happy birthday, <strong>my love.</strong> 💙
+
+            <br><br>
+
+            I hope today reminds you of just how loved,
+            appreciated, and special you are.
+
+            You deserve all the happiness in the world,
+            along with good food, cute cats, pretty things,
+            and maybe a suspiciously large number of seals.
+
+            <br><br>
+
+            Thank you for being someone who makes ordinary
+            days feel a little more special.
+
+            I'm really glad I get to know you,
+            laugh with you, share our little things,
+            and make memories with you.
+
+            <br><br>
+
+            So today is about <strong>you.</strong>
+
+            Your smile, your dreams, your little quirks,
+            and everything that makes you,
+            well...
+
+            <strong>you.</strong>
+
+            💙
+        </p>
+
+    </main>
+</div>
+</body>
+
+	<script>
+	    function toggleCard() {
+	        document.querySelector(".card").classList.toggle("transparent");
+	    }
+	</script>
+
+</html>
