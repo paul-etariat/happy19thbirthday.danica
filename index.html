@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" href="icon.png">
     <title>Happy Birthday 💙</title>
 
     <style>
@@ -25,53 +25,7 @@
 		    padding: 2vw;
 		}
 
-		.screen-cover {
-		    position: fixed;
-		    inset: 0;
-		    z-index: 9999;
-
-		    display: flex;
-		    justify-content: center;
-		    align-items: center;
-
-		    background: rgba(255, 255, 255, 0.12);
-
-		    backdrop-filter: blur(20px);
-		    -webkit-backdrop-filter: blur(20px);
-
-		    cursor: pointer;
-
-		    transition: opacity 0.8s ease;
-		}
-
-		.screen-cover span {
-		    font-family: cursive;
-		    font-size: clamp(30px, 9vw, 60px);
-		    color: white;
-
-		    text-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
-
-		    animation: pulse 2s ease-in-out infinite;
-		}
-
-		.screen-cover.opened {
-		    opacity: 0;
-		    pointer-events: none;
-		}
-
-		@keyframes pulse {
-		    0%, 100% {
-		        opacity: 0.7;
-		        transform: scale(1);
-		    }
-
-		    50% {
-		        opacity: 1;
-		        transform: scale(1.05);
-		    }
-		}
-
-		/* Floating decorations */
+/* Floating decorations */
 
 		.decor {
 		    position: fixed;
@@ -323,6 +277,52 @@
 		}
 
 
+		.screen-cover {
+		    position: fixed;
+		    inset: 0;
+		    z-index: 9999;
+
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+
+		    background: rgba(255, 255, 255, 0.12);
+
+		    backdrop-filter: blur(20px);
+		    -webkit-backdrop-filter: blur(20px);
+
+		    cursor: pointer;
+
+		    transition: opacity 0.8s ease;
+		}
+
+		.screen-cover span {
+		    font-family: cursive;
+		    font-size: clamp(30px, 9vw, 60px);
+		    color: white;
+
+		    text-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
+
+		    animation: pulse 2s ease-in-out infinite;
+		}
+
+		.screen-cover.opened {
+		    opacity: 0;
+		    pointer-events: none;
+		}
+
+		@keyframes pulse {
+		    0%, 100% {
+		        opacity: 0.7;
+		        transform: scale(1);
+		    }
+
+		    50% {
+		        opacity: 1;
+		        transform: scale(1.05);
+		    }
+		}
+
 
         /* Main card */
 		.card {
@@ -537,7 +537,7 @@
 <body>
 
 	<div class="screen-cover" id="screenCover" onclick="openScreen()">
-	    <span>Click me 💙</span>
+	    <span>CLICK ME 💙</span>
 	</div>
 
     <!-- Floating decorations -->
@@ -633,10 +633,11 @@
 	    function toggleCard() {
 	        document.querySelector(".card").classList.toggle("transparent");
 	    }
-		function openScreen() {
-		    document.getElementById("screenCover").classList.add("opened");
-		}
-
+	</script>
+	<script>
+	function openScreen() {
+	    document.getElementById("screenCover").classList.add("opened");
+	}
 	</script>
 
 </html>
