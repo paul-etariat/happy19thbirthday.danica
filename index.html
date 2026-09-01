@@ -25,7 +25,53 @@
 		    padding: 2vw;
 		}
 
-/* Floating decorations */
+		.screen-cover {
+		    position: fixed;
+		    inset: 0;
+		    z-index: 9999;
+
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+
+		    background: rgba(255, 255, 255, 0.12);
+
+		    backdrop-filter: blur(20px);
+		    -webkit-backdrop-filter: blur(20px);
+
+		    cursor: pointer;
+
+		    transition: opacity 0.8s ease;
+		}
+
+		.screen-cover span {
+		    font-family: cursive;
+		    font-size: clamp(30px, 9vw, 60px);
+		    color: white;
+
+		    text-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
+
+		    animation: pulse 2s ease-in-out infinite;
+		}
+
+		.screen-cover.opened {
+		    opacity: 0;
+		    pointer-events: none;
+		}
+
+		@keyframes pulse {
+		    0%, 100% {
+		        opacity: 0.7;
+		        transform: scale(1);
+		    }
+
+		    50% {
+		        opacity: 1;
+		        transform: scale(1.05);
+		    }
+		}
+
+		/* Floating decorations */
 
 		.decor {
 		    position: fixed;
@@ -490,6 +536,10 @@
 
 <body>
 
+	<div class="screen-cover" id="screenCover" onclick="openScreen()">
+	    <span>Click me 💙</span>
+	</div>
+
     <!-- Floating decorations -->
 
 	<!-- Cats -->
@@ -583,6 +633,10 @@
 	    function toggleCard() {
 	        document.querySelector(".card").classList.toggle("transparent");
 	    }
+		function openScreen() {
+		    document.getElementById("screenCover").classList.add("opened");
+		}
+
 	</script>
 
 </html>
